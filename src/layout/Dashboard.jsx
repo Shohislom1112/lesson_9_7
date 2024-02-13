@@ -12,7 +12,6 @@ import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-// import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems } from './ListItems';
 import { Drawer, Header } from '../layout';
 import { Home, Login, NotFound, Profile, Students, Teachers } from './../pages';
@@ -32,7 +31,7 @@ export default function Dashboard() {
           <Header position="absolute" open={open}>
             <Toolbar
               sx={{
-                pr: '24px', // keep right padding when drawer closed
+                pr: '24px',
               }}
             >
               <IconButton
@@ -56,11 +55,7 @@ export default function Dashboard() {
               >
                 Admin Panel
               </Typography>
-              {/* <IconButton color="inherit">
-                <Badge badgeContent={4} color="secondary">
-                  <NotificationsIcon />
-                </Badge>
-              </IconButton> */}
+              
             </Toolbar>
           </Header>
           <Drawer variant="permanent" open={open}>

@@ -67,13 +67,13 @@ const Students = () => {
   };
 
   const handleDelete = async (type, id) => {
-    if (window.confirm(`Are you sure you want to delete this student?`)) {
+    if (window.confirm(`Siz bu studentni ochirishga rozimisiz ?`)) {
       try {
         await axios.delete(
           `https://65bb677f52189914b5bc02b7.mockapi.io/${type}/${id}`
         );
         setStudents(students.filter((student) => student.id !== id));
-        console.log(`${type} with ID ${id} deleted successfully.`);
+        console.log(`${type} bilan ID ${id} ochirildi.`);
       } catch (error) {
         console.log(error);
       }

@@ -67,7 +67,7 @@ const Teachers = () => {
   };
 
   const handleDelete = async (type, id) => {
-    if (window.confirm(`Are you sure you want to delete this teacher ?`))
+    if (window.confirm(`Siz ochirishga rozimisiz ?`))
       try {
         const response = await fetch(
           `https://65bb677f52189914b5bc02b7.mockapi.io/${type}/${id}`,
@@ -79,7 +79,7 @@ const Teachers = () => {
           throw new Error(`Failed to delete ${type} with ID ${id}`);
         }
         setTeachers(teachers.filter((teacher) => teacher.id !== id));
-        console.log(`${type} with ID ${id} deleted succesfully.`);
+        console.log(`${type} bilan ${id} ochirildi.`);
       } catch (error) {
         console.log(error);
       }
@@ -130,7 +130,7 @@ const Teachers = () => {
       {error ? (
         <Typography
           variant="h4"
-          color="error"
+          color="warning"
           sx={{ textAlign: "center", paddingTop: "20px" }}
         >
           {error.message}
