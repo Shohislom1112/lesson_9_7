@@ -89,7 +89,6 @@ export default function Dashboard() {
             <Container maxWidth="lg" sx={{ mt: 4, mb: 4, py: 4 }}>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/teachers" element={<Teachers />} />
                 <Route path="/students" element={<Students />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/profile" element={<Profile />} />

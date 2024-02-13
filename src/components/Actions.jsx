@@ -7,9 +7,7 @@ import { Stack } from "@mui/material";
 
 const Actions = ({ type, data, handleEdit, handleDelete }) => {
   const onDelete = () => {
-    if (type === "teacher") {
-      handleDelete("teachers", data.id);
-    } else if (type === "student") {
+   if (type === "student") {
       handleDelete("students", data.id);
     }
   };
@@ -20,7 +18,7 @@ const Actions = ({ type, data, handleEdit, handleDelete }) => {
         style={{
           width: "38",
           height: "38",
-          background: "#efefef",
+          background: "#919191",
           borderRadius: "12",
         }}
       >
