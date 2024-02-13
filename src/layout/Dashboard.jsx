@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { mainListItems } from './ListItems';
 import { Drawer, Header } from '../layout';
-import { Home, Login, NotFound, Profile, Students, Teachers } from './../pages';
+import { Home, Login, NotFound, Profile, Students } from './../pages';
 
 const defaultTheme = createTheme();
 
@@ -53,7 +53,7 @@ export default function Dashboard() {
                 noWrap
                 sx={{ flexGrow: 1 }}
               >
-                Admin Panel
+                Welcome to CRUD
               </Typography>
               
             </Toolbar>
